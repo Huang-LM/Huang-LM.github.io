@@ -78,7 +78,7 @@ var saveToLocal = {
   isHome: true,
   isHighlightShrink: false,
   isSidebar: false,
-  postUpdate: '2022-05-25 21:53:34'
+  postUpdate: '2022-05-25 22:35:11'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -144,35 +144,41 @@ var saveToLocal = {
 大学生活里
 大一
 先明确自己打算保研的或者其他的
+几个不同大方向
+就业：互联网、国企、外企、银行、传统行业
+考公考编考选调
+考研保研
+创业
+回家继承家产
+
+
+
+
 可以去学习各方面的知识，能越早确定方向越好
 html、css、js的学习
+c语言
 
 
 大二
 根据自己学到的技术可以去参加比赛，能拿奖最好，起码要有实践和锻炼
-前端框架的学习，三大框架：React、Vue、Angular。nodejs
+前端框架的学习，三大框架（React、Vue、Angular），nodejs（koa、express）
+可以考虑日常实习
 
 
 大三
 要对自己选择的方向进行更细致的学习研究，做项目
 可以在github上寻找感兴趣的能参与的开源项目
 编译原理、计算机网络、操作系统、数据结构与算法
-找工作的话最好就要找暑假实习，牛客网，剑指offer，力扣
+要找工作的话，最好大三下参加春招找暑假实习。牛客网，剑指offer，力扣
 面向面经的学习方法
 
 
 关于考试
-大学里的除了保研人以外，大多时候关于考试的事情都是可以在最后的复习（学习）时间里对着老师够画的复习知识点考过的，不过平时分别落下就好
-不过学校教更多的是打基础的，培养编程思维那种
+大学里的除了保研人以外，大多时候关于考试的事情都是可以在最后的复习（学习）时间里对着老师勾画的复习知识点背，背会就考过的，不过平时分别落下就好
+本科阶段学校教更多的是打基础的，培养编程思维那种，要实用或者说是未来工作用到的还是得靠自学
 
 
-前端的学习资料网站：MDN，w3school，阮一峰博客，b站上的视频
-
-前端求职
-找实习（春招）
-能去大厂去大厂，争取暑假实习的转正机会
-简历上起码有一两个拿得出手的项目，无用信息最好不要出现（类似驾驶证、四级）
-大多数公司对于算法要求不 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">     <img class="post_bg" data-lazy-src="https://bu.dusays.com/2022/04/18/625cfa0c607ac.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue相关原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">Vue相关原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-30T01:31:22.000Z" title="发表于 2021-10-30 09:31:22">2021-10-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">vue2响应式
+前端 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">     <img class="post_bg" data-lazy-src="https://bu.dusays.com/2022/04/18/625cfa0c607ac.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue相关原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">Vue相关原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-30T01:31:22.000Z" title="发表于 2021-10-30 09:31:22">2021-10-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">vue2响应式
 在init数据初始化的时候，对象内部通过 defineReactive 方法，使用 Object.defineProperty 将属性进行劫持（这时候只会劫持已经存在的属性）。如果数据是数组类型， Vue2中是通过重写数组方法来实现。多层对象是通过递归来实现劫持的。
 在初始化流程中的编译阶段，当render function 被渲染的时候，会读取Vue实例中和视图相关的响应式数据，此时会触发 getter 函数进行 依赖收集（将观察者Watcher对象存放到当前闭包的订阅者Dep的subs中），此时的数据劫持功能和观察者模式就实现了一个MVVM模式中的Binder，之后就是正常的渲染和更新流程。
 当数据发生变化或者视图导致的数据发生变化时，会触发数据劫持的setter函数，setter会通知初始化依赖收集中的Dep中和视图相应的 Watcher ，告知需要重新渲染视图，Watcher 就会再次通过 update 方法来更新视图。
@@ -250,7 +256,7 @@ Acknowledge number(确认号码)
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js/"><span class="card-category-list-name">js</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">js学习</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9D%A2%E8%AF%95/"><span class="card-category-list-name">面试</span><span class="card-category-list-count">8</span></a></li>
             
             </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Vue/" style="font-size: 1.4em; color: #99a5b6">Vue</a> <a href="/tags/html/" style="font-size: 1.1em; color: #999">html</a> <a href="/tags/js/" style="font-size: 1.3em; color: #99a1ac">js</a> <a href="/tags/node/" style="font-size: 1.2em; color: #999da3">node</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.5em; color: #99a9bf">面试</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives/">
-              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">49.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://bu.dusays.com/2020/10/23/2d835666f74f5.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Ming</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">49.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://bu.dusays.com/2020/10/23/2d835666f74f5.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Ming</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
