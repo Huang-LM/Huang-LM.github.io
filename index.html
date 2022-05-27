@@ -78,7 +78,7 @@ var saveToLocal = {
   isHome: true,
   isHighlightShrink: false,
   isSidebar: false,
-  postUpdate: '2022-05-25 22:35:11'
+  postUpdate: '2022-05-27 16:36:16'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -145,7 +145,7 @@ var saveToLocal = {
 大一
 先明确自己打算保研的或者其他的
 几个不同大方向
-就业：互联网、国企、外企、银行、传统行业
+就业：互联网、国企、外企、银行、游戏、传统行业
 考公考编考选调
 考研保研
 创业
@@ -177,8 +177,7 @@ c语言
 大学里的除了保研人以外，大多时候关于考试的事情都是可以在最后的复习（学习）时间里对着老师勾画的复习知识点背，背会就考过的，不过平时分别落下就好
 本科阶段学校教更多的是打基础的，培养编程思维那种，要实用或者说是未来工作用到的还是得靠自学
 
-
-前端 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">     <img class="post_bg" data-lazy-src="https://bu.dusays.com/2022/04/18/625cfa0c607ac.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue相关原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">Vue相关原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-30T01:31:22.000Z" title="发表于 2021-10-30 09:31:22">2021-10-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">vue2响应式
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">     <img class="post_bg" data-lazy-src="https://bu.dusays.com/2022/04/18/625cfa0c607ac.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue相关原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/30/Vue%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/" title="Vue相关原理">Vue相关原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-30T01:31:22.000Z" title="发表于 2021-10-30 09:31:22">2021-10-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="content">vue2响应式
 在init数据初始化的时候，对象内部通过 defineReactive 方法，使用 Object.defineProperty 将属性进行劫持（这时候只会劫持已经存在的属性）。如果数据是数组类型， Vue2中是通过重写数组方法来实现。多层对象是通过递归来实现劫持的。
 在初始化流程中的编译阶段，当render function 被渲染的时候，会读取Vue实例中和视图相关的响应式数据，此时会触发 getter 函数进行 依赖收集（将观察者Watcher对象存放到当前闭包的订阅者Dep的subs中），此时的数据劫持功能和观察者模式就实现了一个MVVM模式中的Binder，之后就是正常的渲染和更新流程。
 当数据发生变化或者视图导致的数据发生变化时，会触发数据劫持的setter函数，setter会通知初始化依赖收集中的Dep中和视图相应的 Watcher ，告知需要重新渲染视图，Watcher 就会再次通过 update 方法来更新视图。
